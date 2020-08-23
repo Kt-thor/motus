@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      line-height: 1.7;
+}
+.para{
+  letter-spacing: .2rem;
+  font-size: 1em;
+}
+/* ##################     utility classes    ##############################3 */
+.container{
+  max-width: 1000px;
+  width: 70%;
+  margin: 0 auto;
+}
+.lg-heading{
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+.md-heading{
+  font-size: 1.5rem;
+}
+.text-red{
+  color: #e63946;
+}
+.text-light{
+  color: #f4f4f4;
+}
+.text-black{
+  color: #333333;
+  font-weight: 600;
+}
+.text-gray{
+  color: #555555;
+  font-weight: 550;
+}
+
+.text-space{
+  letter-spacing: .3rem;
+}
+.btn{
+  display: inline-block;
+  padding: .5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 2em 0;
+}
+.btn1{
+  background-color: #ffffff;
+  color: #e63946;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.btn1:hover{
+  background-color: #c9e6e1;
+}
+.btn2{
+  background-color: #ffffff;
+  color: #e63946;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border: 1px solid #e63946 ;
+}
+.btn2:hover{
+  background-color: #f1eae9;
+}
+.bg-dark{
+  background-color: #263238;
+        
+}
+
+
+
+
+.header{
+    height: 100vh;
+    background: url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  
+}  
+.header .logo,a,.nav-items{
+  color: white;
+}
+.navbar{
+  padding-top: 2rem;
+}
+.navbar .logo{
+  float: left;
+  padding-bottom: 1rem;
+}
+.navbar .nav-items{
+  float:right ;
+}
+.clearfix{
+  clear:both ;
+}
+li{
+  list-style-type: none;
+}
+.navbar .nav-items .items{
+  display: inline-block;
+  padding-right: 5rem;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+.navbar .nav-items{
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+}
+.navbar a:hover{
+ border-left: 2px solid white;
+ border-right: 2px solid white;
+ padding: .5rem .5rem;
+}
+.header-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2));
+}
+.header-content h1{
+   font-weight: 700;
+}
+.header-content p{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  
+}
+
+
+/* #############################   showcase section styling      ################################# */
+.showcase{
+  background-color: #dddddd;
+  padding: 5rem 0;
+
+}
+.row{
+  height: 293px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 20px 1px #837d7d9f;
+
+
+}
+.row1{
+  margin-bottom: 9rem;
+}
+.row1 .imagebox , .row2 .textbox{
+float: left;
+width: 50%;
+}
+.row2 .imagebox , .row1 .textbox{
+  float: left;
+  width: 50%;
+  }
+  .row .imagebox{
+  
+    height: 100%;
+  }
+  .row .textbox{
+  
+    padding: 3rem;
+  }
+  .row .imagebox img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/* ############################# feature section############################# */
+.features{
+  padding: 10rem 0rem;
+}
+.box{
+  width:33.333333333% ;
+  float: left;
+  padding: 5rem 4rem;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+.box1 , .box3{
+  background-color: #263238;
+
+}
+.box2{
+  background-color: #e05f6a; 
+}
+i{
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+/* ########################### footer styling################### */
+.footer{
+  background-color:#263238 ;
+  padding: 5rem 0rem;
+}
+.social-media{
+  text-align: center;
+  
+}
+.social-media i{
+  padding: .5rem 1.5rem;
+}
+
+/* ########################### ABOUT PAGE #################### */
+.about-heading{
+  border-bottom: 6px solid #e63946;
+  margin-bottom: 2rem;
+}
+
+/* ########################## About Wrapper styling################# */
+.about-wrapper{
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.about-wrapper .left{
+  float: left;
+  width: 50%;
+}
+.about-wrapper .right{
+  float: left;
+  width: 50%;
+}
+.guide{
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.about-wrapper li::before{
+  content: '\2713';
+  padding-right: 1rem;
+  color: #e63946;
+  font-weight: bolder;
+}
+
+/* ########################################## COUNT STYLING#####################
+ */
+
+
+.count-items{
+   float: left;
+   text-align: center;
+   width: 25%;
+   margin-top: 3rem;
+}
+.count-items p{
+font-weight: 700;
+color: gray;
+font-size: 1.3rem;
+}
+/* ############################### BANNER STYLING################### */
+.banner{
+  background-color: #e05f6a;
+  margin-top: 5rem;
+  box-shadow: 5px 5px 5px 10px #f8f0f0c0;
+}
+.banner p{
+  float: left;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 3rem 1rem;
+
+}
+.banner h2{
+  float:right;
+  border: 2px solid white;
+  margin: .7rem 1rem ;
+  padding: .5rem 3rem;
+}
+
+ /* ###################################### ABOUT PAGE STYLING##########################33 */
+ .contact{
+   padding: 3rem 0rem;
+ }
+
+.address{
+  height: 70px;
+  float: left;
+  width: 49%;
+}
+.address-group{
+  margin-bottom: 2rem;
+}
+.address .company-img{
+  max-width:90% ;
+  min-height: 30rem;
+  object-position: right;
+  object-fit: cover;
+  text-align: center;
+}
+
+
+/* ######################################################   form styling ######################### */
+.form{
+  height: 700px;
+  float: right;
+  width: 49%;
+  font-size: 1.6rem;
+}
+.form h1{
+  border-bottom: 5px solid #e63946;
+}
+.form p{
+  margin-top: 1rem;
+}
+.fields{
+  margin-top: 2rem;
+}
+.fields label::after{
+  content: '*';
+  color: #e05f6a;
+}
+.fields input,textarea{
+  width: 100%;
+}
+.form .submit{
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  font-size: 1.8rem;
+  color: white;
+ background-color: #e63946;
+ cursor: pointer;
+ border: none;
+}
